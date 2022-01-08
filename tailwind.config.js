@@ -2,6 +2,7 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+			'lobster': ['Lobster', 'cursive']
 		},
 		extend: {
 			colors: {
@@ -16,6 +17,9 @@ module.exports = {
 					800: '#003072',
 					900: '#00204C',
 				},
+
+				'ar-grey': '#f3f3f3',
+				'ar-lightblue': '#8292FA',
 			}
 		},
 	},
