@@ -6,10 +6,10 @@
 	@apply text-ws-blue-500 underline;
 }
 
-button, .gradient2 {
-	background-color: #f39f86;
-	background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+.cta {
+	@apply py-2 px-4 bg-ar-yellow-1 hover:bg-ar-yellow-2 rounded text-black;
 }
+
 
 /* Browser mockup code
 * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
@@ -34,3 +34,4 @@ button, .gradient2 {
 	box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
 
+[x-cloak] { display: none !important; }

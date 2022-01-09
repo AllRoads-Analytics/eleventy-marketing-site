@@ -2,7 +2,7 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-			'lobster': ['Lobster', 'cursive']
+			'allroads': ['Fugaz One', 'cursive']
 		},
 		extend: {
 			colors: {
@@ -19,7 +19,11 @@ module.exports = {
 				},
 
 				'ar-grey': '#f3f3f3',
-				'ar-lightblue': '#8292FA',
+				'ar-lightblue': '#c3cbff',
+				'ar-darkblue': '#16226B',
+				'ar-yellow-1': '#FAC000',
+				'ar-yellow-2': '#FFD13B',
+				'ar-darkgrey': '#292929',
 			}
 		},
 	},
