@@ -9,6 +9,24 @@ module.exports = {
   },
   "env": process.env.ELEVENTY_ENV === 'production',
 
+	"social": [
+		{
+			label: 'Twitter',
+			url: 'https://twitter.com/AllRoadsApp',
+			icon: '<i class="fab fa-twitter"></i>',
+		},
+		{
+			label: 'LinkedIn',
+			url: 'https://www.linkedin.com/company/allroads-analytics',
+			icon: '<i class="fab fa-linkedin"></i>',
+		},
+		{
+			label: 'Facebook',
+			url: 'https://www.facebook.com/ALLRoadsAnalytics/',
+			icon: '<i class="fab fa-facebook"></i>',
+		},
+	],
+
 	"plans": [
 		{
 				id: 'free',

@@ -7,7 +7,7 @@
 }
 
 .cta {
-	@apply py-2 px-4 bg-ar-yellow-1 hover:bg-ar-yellow-2 rounded text-black;
+	@apply py-2 px-6 bg-ar-yellow-1 hover:bg-ar-yellow-2 bg-gradient-to-br from-ar-yellow-2 rounded text-ar-darkgrey;
 }
 
 

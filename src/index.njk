@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title:
-description:
+description: Easily track lead/sales funnels across all your sites. Explore user journeys, without setting-up funnels ahead of time.
 ---
 
 <main id="main">
@@ -26,7 +26,7 @@ description:
 
         {# <div class="text-3xl font-allroads mt-8">
           <a href="https://app.allroadsanalytics.com/"
-          class="cta px-6 py-4">
+          class="cta">
             Sign Up
           </a>
         </div> #}
@@ -49,7 +49,7 @@ description:
 
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-3">
         {% for Plan in site.plans %}
-          <div class="border rounded bg-white pb-2">
+          <div class="border rounded bg-white pb-5">
             <div class="text-2xl py-2 text-center bg-ar-grey border-b font-bold">
               {{ Plan.label }}
             </div>
@@ -61,7 +61,7 @@ description:
               / month
             </div>
 
-            <div class="grid grid-cols-1 gap-2 mt-3 px-4 lg:px-3 text-sm">
+            <div class="grid grid-cols-1 gap-3 mt-4 px-4 lg:px-3 text-sm">
               <div>
                   <i class="fas fa-filter mr-1"></i>
                   {{ Plan.limit_funnels if Plan.limit_funnels else 'Unlimited' }} saved funnels
@@ -69,7 +69,7 @@ description:
 
               <div>
                   <i class="fas fa-calendar mr-1"></i>
-                  {{ Plan.limit_data_view_days if Plan.limit_data_view_days else 'Unlimited' }} days data retention
+                  {{ Plan.limit_data_view_days + ' days' if Plan.limit_data_view_days else 'Unlimited' }} data retention
               </div>
 
               <div>
@@ -94,7 +94,15 @@ description:
       </div> #}
     </section>
 
-    <section id="foo">
+    <section id="follow" class="mt-16">
+      <div class="flex justify-center gap-3 md:gap-5 text-2xl text-ar-darkblue">
+        {% for Account in site.social %}
+          <a class="rounded-full h-16 w-16 bg-ar-grey hover:bg-white flex items-center justify-center"
+          href="{{ Account.url }}" title="{{ Account.label }}">
+            {{ Account.icon | safe }}
+          </a>
+        {% endfor %}
+      </div>
     </section>
   </div>
 </main>

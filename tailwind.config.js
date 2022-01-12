@@ -23,6 +23,7 @@ module.exports = {
 				'ar-darkblue': '#16226B',
 				'ar-yellow-1': '#FAC000',
 				'ar-yellow-2': '#FFD13B',
+				'ar-yellow-3': '#AD8500',
 				'ar-darkgrey': '#292929',
 			}
 		},
