@@ -20,16 +20,18 @@ description: Easily track lead/sales funnels across all your sites. Explore user
           Explore user journeys, without setting-up funnels ahead of&nbsp;time.
         </div>
 
-        <div class="font-allroads text-4xl mt-6">
+        {# <div class="font-allroads text-4xl mt-6">
           Coming Soon...
-        </div>
-
-        {# <div class="text-3xl font-allroads mt-8">
-          <a href="https://app.allroadsanalytics.com/"
-          class="cta">
-            Sign Up
-          </a>
         </div> #}
+
+        <div class="text-3xl font-allroads mt-4">
+          <a href="https://app.allroadsanalytics.com/register">
+            <button
+            class="cta">
+              Sign Up
+            </button>
+          </a>
+        </div>
       </div>
 
       <div class="flex items-center w-full mx-auto max-w-screen-lg content-end mt-4">
@@ -86,22 +88,24 @@ description: Easily track lead/sales funnels across all your sites. Explore user
         {% endfor %}
       </div>
 
-      {# <div class="text-3xl font-allroads mt-8 text-center">
-        <a href="https://app.allroadsanalytics.com/"
-        class="cta px-6 py-4">
-          Get Started
+      <div class="text-3xl font-allroads mt-5 text-center">
+        <a href="https://app.allroadsanalytics.com/register">
+          <button class="cta px-6">
+            Get Started
+          </button>
         </a>
-      </div> #}
+      </div>
     </section>
 
-    <section id="follow" class="mt-16">
-      <div class="flex justify-center gap-3 md:gap-5 text-2xl text-ar-darkblue">
-        {% for Account in site.social %}
-          <a class="rounded-full h-16 w-16 bg-ar-grey hover:bg-white flex items-center justify-center"
-          href="{{ Account.url }}" title="{{ Account.label }}">
-            {{ Account.icon | safe }}
-          </a>
-        {% endfor %}
+    <section id="demo" class="mt-12 py-6">
+       <h2 class="text-4xl text-center mb-3 font-allroads">
+        Demo
+      </h2>
+
+      <div class="max-w-2xl mx-auto">
+        <div class='yt-embed-container'>
+            <iframe src='https://www.youtube.com/embed/X3rHMh_ww2g?rel=0' frameborder='0' allowfullscreen></iframe>
+        </div>
       </div>
     </section>
   </div>

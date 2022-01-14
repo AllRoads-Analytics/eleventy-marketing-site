@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: Cookie Usage
+description: How cookies are used by AllRoads Analytics.
+---
+
+<main id="main">
+	<div class="container mx-auto min-h-screen md:mt-3 mb-8">
+    <div class="p-6 max-w-screen-md mx-auto md:rounded bg-ar-grey shadow">
+      <h1 class="text-3xl mb-5">
+        Cookie Usage
+      </h1>
+
+      <div class="mt-3 space-y-4">
+        <div>
+          This page describes how AllRoads analytics uses cookies to measure user interactions on websites.
+        </div>
+
+        <div>
+          When you use the AllRoads Analytics tracking script (allroads.js) on your site, the following 1st-party cookies are set in the users browser. No 3rd-party cookies, or other client-side storage mechanism is used.
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="table-auto w-full">
+            <thead>
+              <tr>
+                <th>Cookie Name</th>
+                <th>Expiration Time</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>__allroads_uid</td>
+                <td>2 years</td>
+                <td>Stores a unique identifier for the user, across multiple sessions.</td>
+              </tr>
+
+              <tr>
+                <td>__allroads_sid</td>
+                <td>Session</td>
+                <td>Stores a unique identifier for the user's current session.</td>
+              </tr>
+
+              <tr>
+                <td>__allroads_utm</td>
+                <td>Session</td>
+                <td>Stores the value of any UTM parameters (utm_source, utm_medium, utm_term, utm_content, utm_campaign) present in a URL used to visit the site.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</main>

@@ -13,16 +13,19 @@
     {% endif %}
   </head>
 
-  <body class="bg-ar-lightblue text-gray-900 leading-relaxed tracking-wide flex flex-col">
+  <body class="bg-ar-lightblue text-gray-900 leading-relaxed tracking-wide flex flex-col pb-12">
     <nav class="flex items-center justify-between flex-wrap p-6 mx-auto max-w-screen-xl w-full"
     x-data="{ open: false}">
-      <div class="flex items-center flex-shrink-0 mr-6">
-        <img src="/static/android-chrome-192x192.png" class="w-16 mr-2" />
-        <div class="text-3xl md:text-4xl leading-7 font-allroads w-0 md:w-max">
-          AllRoads
-          Analytics
+      <a href="/">
+        <div class="flex items-center flex-shrink-0 mr-6">
+          <img src="/static/android-chrome-192x192.png" class="w-16 mr-2" />
+          <div class="text-3xl md:text-4xl leading-7 font-allroads w-0 md:w-max">
+            AllRoads
+            Analytics
+          </div>
         </div>
-      </div>
+      </a>
+
       <div class="block md:hidden">
         <button class="flex items-center px-3 py-2 border rounded border-ar-darkblue text-ar-darkblue"
         @click="open = !open">
@@ -37,8 +40,12 @@
             Features
           </a> #}
 
-          <a href="#pricing" class="block mt-4 md:inline-block md:mt-0 hover:text-white">
+          <a href="/#pricing" class="block mt-4 md:inline-block md:mt-0 hover:text-white">
             Pricing
+          </a>
+
+          <a href="/#demo" class="block mt-4 md:inline-block md:mt-0 hover:text-white">
+            Demo
           </a>
 
           <a href="https://app.allroadsanalytics.com/" class="block mt-4 md:inline-block md:mt-0 cta">
@@ -49,6 +56,26 @@
     </nav>
 
     {{ content | safe }}
+
+    <section id="follow" class="mt-16">
+      <div class="flex justify-center gap-3 md:gap-5 text-2xl text-ar-darkblue">
+        {% for Account in site.social %}
+          <a class="rounded-full h-16 w-16 bg-ar-grey hover:bg-white flex items-center justify-center"
+          href="{{ Account.url }}" title="{{ Account.label }}">
+            {{ Account.icon | safe }}
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="footer" class="mt-8">
+      <div class="flex flex-wrap gap-5 justify-items-center justify-center text-ar-darkblue text-sm">
+        <a href="/privacy" class="hover:underline">Privacy</a>
+        <a href="/terms-of-service" class="hover:underline">Terms of Service</a>
+        <a href="/cookie-usage" class="hover:underline">Cookie Usage</a>
+        <a href="/contact" class="hover:underline">Contact Us</a>
+      </div>
+    </section>
 
     <!-- Start AllRoads Snippet -->
     <script>

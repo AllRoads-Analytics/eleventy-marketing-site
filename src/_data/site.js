@@ -1,10 +1,10 @@
 module.exports = {
   "title": "AllRoads Analytics",
   "description": "Marketing site.",
-  "url": "https://eleventywebstarter.netlify.app",
-  "author": "Chris Collins",
+  "url": "https://timcieplowski.com",
+  "author": "Tim Cieplowski",
   "meta_data": {
-    "twitter": "@scottishstoater",
+    "twitter": "@tim_cieplowski",
     "opengraph_default": "/static/opengraph-default.jpg"
   },
   "env": process.env.ELEVENTY_ENV === 'production',
