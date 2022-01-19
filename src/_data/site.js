@@ -1,7 +1,7 @@
 module.exports = {
   "title": "AllRoads Analytics",
   "description": "Marketing site.",
-  "url": "https://timcieplowski.com",
+  "url": "https://www.allroadsanalytics.com",
   "author": "Tim Cieplowski",
   "meta_data": {
     "twitter": "@tim_cieplowski",
