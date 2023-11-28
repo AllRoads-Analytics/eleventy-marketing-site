@@ -4,6 +4,8 @@ Live site: www.allroadsanalytics.com/
 
 Hosted on Netlify.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5f7d701c-2642-4f89-9000-1a26dadca88b/deploy-status)](https://app.netlify.com/sites/flamboyant-franklin-d17b63/deploys)
+
 ## Contents 	
 
 - [Project overview](#project-overview)
